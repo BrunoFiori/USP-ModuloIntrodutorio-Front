@@ -11,7 +11,7 @@ const StyledCard = styled(Card)`
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
@@ -19,7 +19,11 @@ const StyledCard = styled(Card)`
 `;
 const StyledCardMedia = styled('img')`
   width: 100%;
-  height: 200px;
+  height: 300px;
+  &:hover {
+    transition: 0.3s ease-in-out;
+    height: 100%;
+  }
   border-radius: 10px;
   object-fit: cover;
   transition: height 0.3s;
